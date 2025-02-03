@@ -557,10 +557,7 @@
       const clickUrl = "https://toopsoug.net/4/8892958?var={8892958}";
       window.onbeforeunload = null;
       const newWindow = window.open(clickUrl, '_blank', 'noreferrer,noopener');
-
-      if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-        throw new Error("Pop-up was blocked. Please allow pop-ups for this site");
-      }
+      
 
       setTimeout(() => {
         handleAdReward(currentUserId)
